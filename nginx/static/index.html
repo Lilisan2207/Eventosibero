@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Comunitarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eventos comunitarios</h1>
+        <div id="login">
+            <h2>Login</h2>
+            <input type="text" id="usuario" placeholder="Usuario"></input>
+            <input type="password" id="clave" placeholder="clave"></input>
+            <button onclick="login()">Ingresar</button>
+            <p id="mensajeLogin"></p>
+        </div>
+        <div id="crear evento" style="display:none;">
+            <h2>Nuevo evento</h2>
+            <input type="text" id="nombre" placeholder="Usuario"></input>
+            <input type="date" id="fecha"></input>
+            <input type="text" id="lugar" placeholder="Lugar"></input>
+            <button onclick="crearEvento()">crear</button>
+        </div>
+        <div id="Eventos"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
